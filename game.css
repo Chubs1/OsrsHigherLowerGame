@@ -1,0 +1,160 @@
+body {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+nav { background-color: #1A1A1A;
+	position: absolute;
+	top: 0;
+	height: 5%;
+	width:100%;
+	text-size: 3em;
+	left:0;
+}
+
+nav a { float: right;
+	  text-decoration: none;
+	 	color: #fff;
+	font-size: 3em;
+	margin-right: 10px;
+	
+}
+
+#logo{ height: 100%;
+	 float:left;
+}
+
+#main-game-wrapper {
+  display: none;
+}
+
+.vl {
+  border-left: 2px solid #1A1A1A;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 5%;
+}
+
+#items-divs {
+	text-align:center;
+}
+
+#item-1 {
+	position:absolute;
+	right:50%;
+	top:40%;
+	width:30%;
+}
+
+#item-2 {
+	position:absolute;
+	left:50%;
+	top:40%;
+	width:30%;
+}
+
+
+#checkmark, #cross{  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	height: 80px;
+	display:none;
+}
+#vs {
+  height: 125px;
+  width: 125px;
+  background-color: #1A1A1A;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -62.5;
+  top: 45%;
+}
+
+#vs.correct{
+	animation: correct 1s;
+	animation-fill-mode: forwards
+	
+}
+
+#vs.incorrect{
+	animation: incorrect 1s;
+	animation-fill-mode: forwards
+	
+}
+
+@keyframes correct {
+0% {background-color: #fff;}
+100% {background-color: #04aa6d;}
+}
+
+@keyframes incorrect {
+0% {background-color: #fff;}
+100% {background-color: #bf2828;}
+}
+
+#vs h1 {
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+
+
+#score {
+  left: 55%;
+  top: 5%;
+  position: absolute;
+}
+
+#best-score {
+  right: 55%;
+  top: 5%;
+  position: absolute;
+}
+
+.button {
+  background-color: #1A1A1A;
+ 
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#higher-button:hover {
+  background-color: #04aa6d;
+  color: black;
+}
+
+#lower-button:hover {
+  background-color: #bf2828;
+  color: black;
+}
+
+#reset-button {
+	display:none;
+	position: absolute;
+top: 57.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	height: 80px;
+}
+
+#end-game-text { position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	height: 80px;
+	display:none;
+	
+
+}
